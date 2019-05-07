@@ -1,22 +1,22 @@
 import React from "react";
 // import Comment from "./Comment";
 
-const CommentsSection = styled.section`
-    display: flex;
-    flex-direction: column;
-`;
+// const CommentsSection = styled.section`
+//     display: flex;
+//     flex-direction: column;
+// `;
 
-const TimeStamp = styled.span`
-    color: silver;
-    font-size: .8rem;
-    padding-left: 15px;
-`;
+// const TimeStamp = styled.span`
+//     color: silver;
+//     font-size: .8rem;
+//     padding-left: 15px;
+// `;
 
-const BorderTop = styled.hr`
-    color: rgb(199, 198, 198);
-    width: 96%;
-    margin: 15px auto; 
-`;
+// const BorderTop = styled.hr`
+//     color: rgb(199, 198, 198);
+//     width: 96%;
+//     margin: 15px auto; 
+// `;
 
 class CommentSection extends React.Component{
     constructor(props) {

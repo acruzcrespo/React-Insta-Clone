@@ -11,10 +11,7 @@ const SearchBar = props => {
 
             <SearchContainer>
 
-            <SearchButton 
-            onClick={props.preventRefresh}>
-            <SearchIcon className="fas fa-search"></SearchIcon>
-            </SearchButton>
+           
 
             <SearchInput 
             placeholder=""
@@ -24,11 +21,6 @@ const SearchBar = props => {
             
             </SearchContainer>
 
-            <HeaderIcons>
-                <ClickMes className="far fa-compass"></ClickMes>
-                <ClickMes className="far fa-heart"></ClickMes>
-                <ClickMes onClick={props.handleLogOut} className="far fa-user"></ClickMes>
-            </HeaderIcons>
 
 
         </Header>

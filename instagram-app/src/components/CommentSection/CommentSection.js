@@ -1,7 +1,5 @@
 import React from "react";
-import Comment from "./Comment";
-import moment from "moment";
-import styled from 'styled-components';
+// import Comment from "./Comment";
 
 const CommentsSection = styled.section`
     display: flex;

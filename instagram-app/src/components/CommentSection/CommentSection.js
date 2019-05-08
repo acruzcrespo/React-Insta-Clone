@@ -42,8 +42,7 @@ class CommentSection extends React.Component{
                         key={eachComment.timestamp}
                         />
                 })}
-                <TimeStamp>{moment(this.props.timestamp, "MMMM Do YYYY, hh:mm:ss a").fromNow()}</TimeStamp>
-                <BorderTop/>
+                <timestamp>{moment(this.props.timestamp, "MMMM Do YYYY, hh:mm:ss a").fromNow()}</timestamp>
                 <CommentInput 
                 comment={this.state.comment}
                 handleInput={this.handleInput}

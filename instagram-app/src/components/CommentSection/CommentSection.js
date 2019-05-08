@@ -1,5 +1,5 @@
 import React from "react";
-// import Comment from "./Comment";
+import Comment from "./Comment";
 
 // const CommentsSection = styled.section`
 //     display: flex;
@@ -49,7 +49,7 @@ class CommentSection extends React.Component{
     render() {
         return ( 
             <CommentsSection> 
-                {this.state.comments.map(eachComment => {
+                {this.state.comment.map(eachComment => {
                 return  <Comment
                         eachComment={eachComment}
                         key={eachComment.timestamp}

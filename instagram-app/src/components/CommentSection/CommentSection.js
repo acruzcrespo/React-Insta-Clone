@@ -2,7 +2,7 @@ import React from "react";
 import CommentInput from "./CommentInput";
 import Comment from "./Comment";
 import moment from "moment";
-import styled from 'styled-components';
+
 
 
 class CommentSection extends React.Component{
@@ -35,7 +35,7 @@ class CommentSection extends React.Component{
 
     render() {
         return ( 
-            <CommentsSection> 
+            <CommentSection> 
                 {this.state.comments.map(eachComment => {
                 return  <Comment
                         eachComment={eachComment}
@@ -49,7 +49,7 @@ class CommentSection extends React.Component{
                 handleInput={this.handleInput}
                 addNewComment={this.addNewComment}
                 />
-            </CommentsSection> )
+            </CommentSection> )
  }
 }
 

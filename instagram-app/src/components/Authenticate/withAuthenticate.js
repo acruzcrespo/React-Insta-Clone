@@ -20,3 +20,14 @@ const withAuthenticate = PostsPage => LoginPage =>
             })
         }
     }
+
+    render() {
+        if (this.state.loggedIn) {
+            return <PostsPage />;
+        } else {
+            return <LoginPage />
+        }
+    }
+}
+
+export default withAuthenticate;

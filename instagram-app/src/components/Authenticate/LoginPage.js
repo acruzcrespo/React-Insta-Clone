@@ -99,7 +99,7 @@ class LoginPage extends React.Component {
         <LoginPageContainer>
         <LoginCard>
             <StyledH2>Instagram</StyledH2>
-            <Subtitle>Sign up to see Camping Trips Ideas</Subtitle>
+            <Subtitle>Sign up to see Food Ideas</Subtitle>
             <LoginButton onClick={this.handleNewUser}>Log In with Facebook</LoginButton>
             <LoginInput 
             placeholder="Username..."

@@ -1,15 +1,14 @@
 import React from "react";
 import CommentInput from "./CommentInput";
 import Comment from "./Comment";
-import moment from "moment";
 import styled from 'styled-components';
 
-const CommentSection = styled.section`
+const CommentsSection = styled.section`
     display: flex;
     flex-direction: column;
 `;
 
-const timestamp = styled.span`
+const moment = styled.span`
     color: silver;
     font-size: .8rem;
     padding-left: 15px;

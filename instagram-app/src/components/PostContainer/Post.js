@@ -1,6 +1,6 @@
 import React from 'react';
 import CommentSection from '../CommentSection/CommentSection';
-import UserInteraction from './UserInteraction';
+import UserInteraction from './UserInteractions';
 
 import styled from 'styled-components';
 import PropTypes from "prop-types";

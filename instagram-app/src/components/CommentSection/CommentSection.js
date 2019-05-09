@@ -2,6 +2,24 @@ import React from "react";
 import CommentInput from "./CommentInput";
 import Comment from "./Comment";
 import moment from "moment";
+import styled from 'styled-components';
+
+const CommentSection = styled.section`
+    display: flex;
+    flex-direction: column;
+`;
+
+const timestamp = styled.span`
+    color: silver;
+    font-size: .8rem;
+    padding-left: 15px;
+`;
+
+const BorderTop = styled.hr`
+    color: rgb(199, 198, 198);
+    width: 96%;
+    margin: 15px auto; 
+`;
 
 
 
@@ -43,6 +61,7 @@ class CommentSection extends React.Component{
                         />
                 })}
                 <timestamp>{moment(this.props.timestamp, "MMMM Do YYYY, hh:mm:ss a").fromNow()}</timestamp>
+               <BorderTop/>
                 <CommentInput 
                 comment={this.state.comment}
                 handleInput={this.handleInput}

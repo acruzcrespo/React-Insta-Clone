@@ -1,17 +1,12 @@
 import React from "react";
 import CommentInput from "./commentInput";
 import Comment from "./comment";
+import moment from 'moment';
 import styled from 'styled-components';
 
-const CommentsSection = styled.section`
+const CommentsSectionContainer = styled.section`
     display: flex;
     flex-direction: column;
-`;
-
-const moment = styled.span`
-    color: silver;
-    font-size: .8rem;
-    padding-left: 15px;
 `;
 
 const BorderTop = styled.hr`
@@ -26,11 +21,13 @@ class CommentSection extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            comments: props.comments,
+            comments: this.props.comments,
             comment: "", 
 
         }
+        
     }
+
 
     addNewComment = e => {
         e.preventDefault(); 
@@ -51,22 +48,23 @@ class CommentSection extends React.Component{
 
 
     render() {
+        console.log(this.state.comments);
         return ( 
-            <CommentSection> 
+            <CommentsSectionContainer> 
                 {this.state.comments.map(eachComment => {
                 return  <Comment
                         eachComment={eachComment}
                         key={eachComment.timestamp}
                         />
                 })}
-                <timestamp>{timestamp(this.props.timestamp, "MMMM Do YYYY, hh:mm:ss a").fromNow()}</timestamp>
+                <p>{moment(this.props.timestamp, "MMMM Do YYYY, hh:mm:ss a").fromNow()}</p>
                <BorderTop/>
                 <CommentInput 
                 comment={this.state.comment}
                 handleInput={this.handleInput}
                 addNewComment={this.addNewComment}
                 />
-            </CommentSection> )
+            </CommentsSectionContainer> )
  }
 }
 

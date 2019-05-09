@@ -69,6 +69,7 @@ class Post extends React.Component{
        }
 
     render(){
+        console.log(this.props.item.comments);
     return (
         <UserCard>
         <CardHeader>

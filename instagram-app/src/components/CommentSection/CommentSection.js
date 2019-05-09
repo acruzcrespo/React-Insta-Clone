@@ -1,6 +1,6 @@
 import React from "react";
-import CommentInput from "./CommentInput";
-import Comment from "./Comment";
+import CommentInput from "./commentInput";
+import Comment from "./comment";
 import styled from 'styled-components';
 
 const CommentsSection = styled.section`
